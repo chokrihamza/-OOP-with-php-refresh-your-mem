@@ -1,20 +1,17 @@
 <?php
-class Cars
+class Voiture
 {
+  public $roue = 4;
+  protected $path = "Chicago";
+  private $user = "Sami";
 
-  private $seat_count = 2;
-  private $wheels = 5;
-
-  function car_detail()
+  function voiture_details()
   {
-
-
-    echo $this->seat_count;
+    echo $this->roue . "<br/>";
+    echo $this->user . "<br/>";
+    echo $this->path;
   }
 }
-$bmw = new Cars();
-
-//echo $bmw->wheel_count;
-//echo $bmw->door_count; // we cannot access private prop from the outside
-//echo $bmw->seat_count;// we cannot access protected prop from the outside
-$bmw->car_detail();
+$bmw = new Voiture();
+$bmw->voiture_details();
+?>
