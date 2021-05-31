@@ -2,14 +2,12 @@
 
 
 
-class Cars{
+class Cars
+{
    var $wheels=4;
   function greeting(){
    return  "hello";
   }
-
-  
-  
 }
 class Trucks extends Cars{
  var $wheels=10;
