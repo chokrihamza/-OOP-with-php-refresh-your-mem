@@ -1,41 +1,19 @@
 <?php
-// formation sur les oop using php
-class Cart
+
+class Base
 {
-  // propeties 
-  public $article = ["tomato", "avocado", "ships", "biscuts"];
-  // methods
-  function get_article()
+  const x = 10;
+  const y = 10;
+
+  function get_const()
   {
-    echo "hi Client you want to know about you ?";
-    include "form.html";
-    echo $this->article[0] . "</br>";
-    echo $this->article[1] . "</br>";;
-    echo $this->article[2] . "</br>";;
-    echo $this->article[3] . "</br>";;
+    echo $this::x;
+    echo $this::y;
   }
 }
 
-$shop_cart = new Cart();
-var_dump($shop_cart);
-echo "</br>";
-var_dump($shop_cart->article);
-function show($a)
-{
-  echo "<h1 style='color:lightblue;'>$a</h1>";
-}
-array_map('show', $shop_cart->article);
-
-/// call a method in class
-$shop_cart->get_article();
-
-
-
-
-
-
-
-
+$base = new Base();
+$base->get_const();
 
 
 
