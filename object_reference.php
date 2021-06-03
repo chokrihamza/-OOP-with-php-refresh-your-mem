@@ -20,7 +20,7 @@ $d = &$c; // $c and $d are references
 // ($c,$d) = <id>
 $d->foo = 3;
 echo $c->foo . "\n";
-
+//
 $e = new A;
 
 function foo($obj)
