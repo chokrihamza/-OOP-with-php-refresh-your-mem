@@ -1,0 +1,14 @@
+{
+    "name": "hamza/chokri",
+    "description": "mail app",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Hamza\\Chokri\\": "src/"
+        }
+    },
+    "require": {
+        "phpmailer/phpmailer": "^6.4"
+    }
+}
