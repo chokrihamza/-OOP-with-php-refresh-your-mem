@@ -1,5 +1,5 @@
 <?php
-
+#gffjhk
 namespace my\name;
 
 class MyClass
